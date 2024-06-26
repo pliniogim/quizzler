@@ -1,4 +1,5 @@
 from tkinter import *
+from quiz_brain import QuizBrain
 
 THEME_COLOR = "#375362"
 BACKGROUND_COLOR = "medium aquamarine"
@@ -6,7 +7,8 @@ BACKGROUND_COLOR = "medium aquamarine"
 
 class QuizzlerUi:
 
-    def __init__(self):
+    def __init__(self, quiz: QuizBrain):
+        self.quiz = quiz
         self.window = Tk()
         self.window.title("Quizzler App")
         self.window.config(bg=BACKGROUND_COLOR)
@@ -32,10 +34,13 @@ class QuizzlerUi:
 
         self.window.mainloop()
 
+    def get_next_question():
+        self.quiz.
 
 def ans_true():
     pass
 
-
 def ans_false():
     pass
+
+
