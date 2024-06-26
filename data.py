@@ -1,6 +1,10 @@
 import requests
-questions = requests.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean").json()
+
 # https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean
+# open database
+
+questions = requests.get("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=boolean").json()
+
 question_data = questions["results"]
 
 # question_data = [
